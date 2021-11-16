@@ -34,7 +34,7 @@ namespace NeuralNetworks
 
         private void FeedForwardAfterFirstLayertoOther()
         {
-            for (int i = 0; i < Layers.Count; i++)
+            for (int i = 1; i < Layers.Count; i++)
             {
                 var layer = Layers[i];
                 var previouseLayerSignals = Layers[i - 1].GetSignals();
